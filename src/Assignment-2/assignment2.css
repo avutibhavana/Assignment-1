@@ -2,6 +2,63 @@
 
 
 .container, .content {
-width: 100%;
-height: 100%;
-}
+    width: 100%;
+    height: 100%;
+    }
+    .header{
+        width:100px;
+        height:100px;
+    }
+    img{
+        float: left;
+    }
+    .search{
+        float:right;
+        padding:10px;
+        margin-top:-70px;
+        margin-right:15px;
+        border:none;
+    }
+    .nav-link{
+        margin-top:20px;
+        font-size: 20px;
+        border:1px solid black;
+        text-decoration:underline;
+    }
+    .nav{
+        text-decoration: none;
+        margin-left:200px;
+    }
+    #left-sidebar-menu{
+        list-style-type:none;
+        font-size: 40px;
+        line-height:60px;
+        color: crimson;
+    
+    }
+    .mylist{
+        float: right;
+        margin-top:-1200px;
+        margin-right:50px;
+        font-size: 45px;
+        list-style-type:none;
+        color:brown;
+        line-height: 50px;
+    }
+    .main-content-section{
+        display:inline-block;
+        position: relative;
+        top:-640px;
+        left:400px;
+        right:400px;
+    }
+    .post-img{
+        margin:50px;
+    }
+    #page-footer{
+        margin-top:-640px;
+        font-size:large;
+        font-style: italic;
+    }
+    
+    
