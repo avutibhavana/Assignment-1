@@ -1,7 +1,52 @@
 /* Our CSS file. */
 
 
-.container, .content {
+.container, .content{
 width: 100%;
 height: 100%;
+}
+.content{
+    width:99%;
+    text-align:center;
+    background-color: #f2f2f2;
+    height:600px;
+    margin:10px 20px;
+    border:1px solid black;
+}
+.left-inline,.right-inline{
+    display:inline-block;
+    width:40%
+}
+.left-inline{
+    vertical-align:top;
+}
+.right-inline{
+    height:inherit;
+    width:50%;
+}
+#render-wiki{
+    height:580px;
+    width:107%;
+    margin:10px;
+}
+.btn{
+    background:black;
+    border:1px solid white;
+    color:white;
+    height:50px;
+    width:150px;
+    vertical-align: middle;
+    padding:15px;
+}
+.block{
+    display:block;
+    width:99%;
+}
+.bottom-content{
+    height:100px;
+}
+#render-dictionary{
+    height:400px;
+    width:97%;
+    margin:10px;
 }
