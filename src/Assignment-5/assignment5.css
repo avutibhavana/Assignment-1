@@ -1,7 +1,78 @@
 /* Our CSS file. */
-
-
-.container, .content {
+*{
+    box-sizing:border-box;
+}
+html,body,.container, .content {
 width: 100%;
 height: 100%;
+}
+body{
+    background-color:grey ;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+.wrap{
+    height:100%;
+    padding-bottom: 2px;
+}
+.card{
+    display:flex;
+    flex: 0 0 auto;
+    background: white;
+    max-width:90%;
+    margin:80px auto;
+    border-radius: 5px;
+    /* bottom: 10px; */
+}
+.card-pic-wrap{
+    border-radius:5px 0 0 5px;
+    padding-top: 100px;
+    width:380px;
+    height: 280px;
+    flex:0 0 auto;
+    position: relative;
+    background-image:linear-gradient(to bottom,#9fd483,#9fd483);
+}
+.card-pic-wrap img{
+    position:absolute;
+    padding-top:60px;
+    bottom:22px;
+    left:1px;
+    margin-left: -40px;
+    width: 450px;
+    max-height: 360px;
+}
+.card-content{
+    margin-left: 120px;
+    padding:3px 4px 2px;
+}
+.card-content h3{
+    margin-top:50px;
+}
+.card-content p{
+    margin-top:30px;
+}
+.card-content a{
+    background-color: #9fd483;
+    color: white;
+    padding:0 25px;
+    height: 50px;
+    letter-spacing:1px;
+    line-height: 50px;
+    font-size: 0.8cm;
+    display:inline-block;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 3px;;
+    border:1px solid;
+}
+.card-content a:hover{
+    background-color: #7ba751;
+}
+.card-pic-wrap .image1{
+    max-height:280px;
+
 }
