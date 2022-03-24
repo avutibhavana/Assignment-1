@@ -12,9 +12,9 @@
   
 	// Load Quixote.
 	var quixote = require("../../vendor/quixote.js");
-  
+	const dom = (s) => document.querySelector(s); 
 	// Define a test suite using Mocha's standard `define` function.
-	describe.only("Assignment-5", function () {
+	describe.only("Assignment-6", function () {
 	  // Variables used by our tests. They're populated in the `before()` and `beforeEach()` functions.
 	  var frame; // The Quixote test frame.
 	  var container, frameDom; // The figure element inside the media object. (The icon.)
@@ -25,9 +25,9 @@
 		// Create the frame and load our stylesheet.
 		frame = quixote.createFrame(
 		  {
-			src: "/base/src/Assignment-5/assignment5.html", // the server under test must be proxied to localhost
+			src: "/base/src/Assignment-6/assignment6.html", // the server under test must be proxied to localhost
 			// The URL of our stylesheet. It's served by Karma and configured in `build/config/karma.conf.js`.
-			stylesheet: "/base/src/Assignment-5/assignment5.css",
+			stylesheet: "/base/src/Assignment-6/assignment6.css",
 		  },
 		  done
 		); // This is an asynchronous operation, so we pass in Mocha's `done` callback.
@@ -55,22 +55,16 @@
 	  });
   
 	  
-	  it("Page should have two cards with class name- 'card'", function () {
+		  it("Page should have one textarea", function () {
 			assert.isTrue(
-			  frame.toDomElement().contentDocument.getElementsByClassName("card")
-				.length === 2
+			  frame.toDomElement().contentDocument.getElementsByTagName("textarea")
+				.length === 1
 			);
 		  });
-		  it("Page should have two image tags", function () {
-			assert.isTrue(
-			  frame.toDomElement().contentDocument.getElementsByTagName("img")
-				.length === 2
-			);
-		  });
-		  it("Card should have flex property", function () {
-			assert.isTrue(window.getComputedStyle(frame
+		  it("Page should have one button type='submit'", function () {
+			assert.isTrue(frame
 				.toDomElement()
-				.contentDocument.getElementsByClassName('card')[0]).getPropertyValue('display')==="flex");
+				.contentDocument.getElementsByTagName('button')[0].getAttribute('type')==="submit");
 		  });
   
 	});
